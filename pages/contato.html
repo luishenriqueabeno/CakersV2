@@ -1,0 +1,60 @@
+<div class = "container">
+	<div class = "contatoForm">
+		<div class = "contatoWrapper">
+			<h3> Entre em Contato! </h3>						
+			<br>
+			<div>
+				<label> Nome: *</label> <input type = "text" name = "nome" size = "25">
+				<br><br>
+			</div>
+			<div>
+				<label> Email: *</label> <input type = "text" name = "email" size = "25">
+				<br><br>
+			</div>
+			<div>
+				<label> Telefone: </label> <input type = "text" name = "tel" size = "25">
+			</div>
+			<div class = "mensagem">
+				<label> Mensagem </label>
+				<br>
+				<textarea name = "mensagem" cols = "40" rows = "5"> </textarea>
+			</div>
+			<input type = "submit" class = "enviar" name = "enviar" value = "Enviar">
+			<div class = "contato-rodape">
+				<span>Ou se preferir mande um e-mail! </span><br>
+				Telefone: (11) 9.7170-0918 - contato@cakersfestas.com.br
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function(){
+		$('.enviar').click(function(){
+			var nome = $('input[name=nome]').val();
+			var email = $('input[name=email]').val();
+			var tel = $('input[name=tel]').val();
+			var msg = $('textarea[name=mensagem]').val();
+
+			if(nome == ''){
+				alert ("Por favor preencha o campo nome");
+			} else if(email == ''){
+				alert ("Por favor preencha o campo email");
+			} else{
+				$.ajax({
+				type: "POST",
+				url: "sendEmail.php",
+				data: {
+					nome: nome,
+					email: email,
+					tel: tel,
+					msg: msg
+					},
+				success: function(data){
+					alert("Obrigado por ter entrado em contato. Responderemos em breve.");
+				}
+			});
+		}
+		});
+	});
+</script>

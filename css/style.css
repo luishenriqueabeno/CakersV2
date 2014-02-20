@@ -1,0 +1,381 @@
+@font-face {
+    font-family: "monotype";
+    src: url('fonts/mtcorsva.ttf') format("truetype");
+}
+
+li{
+	list-style-type: none;
+}
+body{
+	background:url('../images/bg.jpg') center center;
+}
+.container{
+	padding:0 10px 0 10px;
+}
+.topMargin{
+	margin-top:10px;
+}
+a,a:visited, a:hover, a:link{
+	text-decoration:none;
+	color:#000;
+}
+h2{
+	font-family:'Antic Slab', serif;
+}
+.allContainer{
+	padding:0 100px 0 100px;
+}
+
+/* Header */
+.headerInner{
+	height:160px;
+	position:relative;
+}
+.logo{
+	position:absolute;
+	width: 180px;
+	height:160px;
+	left:50%;
+	margin-left:-90px;
+	background:url('../images/logo.png') center center no-repeat;
+}
+
+
+/* Menu */
+.menuInner{
+	position:relative;
+	background:url('../images/bgMenu.png') left no-repeat;
+	background-size: 100% 100%;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/bgMenu.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/bgMenu.png', sizingMethod='scale')";
+	height:50px;
+	width: 100%;
+}
+#mainMenu{
+	height:20px;
+	padding:15px;
+	margin:10px 0 0 270px;
+	font-weight: normal;
+	font-family: 'Roboto Slab', serif;
+	font-size:16px;
+}
+#mainMenu li{
+	float:left;
+	margin:0 50px 0 0;
+	list-style-type:none;
+}
+#mainMenu li a{
+	color: #5B6262;
+	padding: 8px 10px 8px 10px;
+}
+#mainMenu li a:hover{
+	background: #f0bf00;
+	color: #fff;
+	padding: 8px 10px 8px 10px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+/* Conteúdo */
+.contentInner{
+	padding: 100px 50px 50px 50px;
+}
+.textwraper{
+	font-family: 'Roboto Slab', serif;
+	font-size:14px;
+	line-height:25px;	
+}
+
+/* Home */
+.bjqs-markers li{
+	margin-right:5px;
+}
+#my-slideshow{
+	margin-left: 140px;
+	margin-top: -60px;
+}
+ol.bjqs-markers li a {
+	padding: 1px 5px;
+	background:url('../images/blackBall.png') center center no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+	margin: 5px;
+	text-decoration: none;
+	text-align: right;
+}
+ol.bjqs-markers li.active-marker a, ol.bjqs-markers li a:hover {
+	padding: 1px 5px;
+	background:url('../images/activeBall.png') center center no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+	margin: 5px;
+	text-decoration: none;
+	text-align: right;
+}
+.homeBox01, .homeBox02, .homeBox03{
+	margin-top:100px;
+	width:300px;
+	height:300px;
+}
+.homeBox01{
+	left:210px;
+	position: absolute;
+	background: url('../images/box01-02.png') center center no-repeat;
+}
+.homeBox02{
+	left:560px;
+	position: absolute;
+	background: url('../images/box02-02.png') center center no-repeat;	
+}
+.homeBox03{
+	left:910px;
+	position: absolute;
+	background: url('../images/box03-02.png') center center no-repeat;
+}
+.boxTitle01{	
+	width:180px;
+	height:80px;
+	background: url('../images/boxTitle01.png') center center no-repeat;
+	margin-top: 80px;
+	margin-left: -81px;
+}
+.boxTitle02{	
+	width:180px;
+	height:80px;
+	background: url('../images/boxTitle02.png') center center no-repeat;
+	margin-top: 80px;
+	margin-left: -81px;
+}
+.boxTitle03{	
+	width:180px;
+	height:80px;
+	background: url('../images/boxTitle03-02.png') center center no-repeat;
+	margin-top: 80px;
+	margin-left: -81px;
+}
+.boxMargin{
+	height: 500px;
+}
+
+/* Sobre */
+.fotoSobre{
+	height: 250px;
+	float: left;
+	width: 280px;
+	border: solid 1px;
+	margin-right: 40px;
+	background:url('../images/fotoSobre.jpg') center center no-repeat;
+	background-size:100% 100%;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/fotoSobre.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/fotoSobre.jpg', sizingMethod='scale')";
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;	
+}
+
+/* Contato */
+.contatoForm input, textarea{
+	border:dotted;
+	border-width:1px;
+}
+.contatoForm h3{
+	font-family: 'Patua One', cursive;
+	font-size:24px;
+	color:#5B6262;
+	margin-bottom:20px;
+}
+.contatoForm{
+	float:left;
+	position:relative;
+	height:27em;
+	width:50em;
+	margin-left:5em;
+	background:url('../images/contactFormBG.png') no-repeat;
+	background-size:100% 100%;
+	padding:5px;
+	margin-top:-20px;
+	margin-bottom: 50px;
+}
+.contatoWrapper{
+	margin:20px;
+}
+.contatoForm input{
+	margin-right:350px;
+	float:right;
+}
+.mensagem{
+	position:absolute;
+	right:50px;
+	top:50px;
+	margin-top:30px;
+}
+.contatoForm label{
+	font-family: 'Patua One', cursive;
+	font-size:12px;
+	color:#5B6262;
+	cursor:auto;
+}
+.enviar{
+	margin-top:80px;
+	width:160px !important;
+	height:40px;
+	border-radius:2px;
+	margin-left:280px;
+	position:absolute;
+	font-family: 'Patua One', cursive;
+	color:#5B6262;
+}
+.enviar:hover{
+	background:#3880f8;
+}
+section#contato label{
+	float:left;
+}
+.contato-rodape{
+	position: absolute;
+	font-family: 'Patua One', cursive;
+	bottom: 20px;
+	color:#5B6262;
+}
+.contato-rodape span {
+	position:absolute;
+	margin-top:-20px;
+}
+
+/* Social */
+.social{
+	position: absolute;
+	bottom: -8px;
+	right: 0;
+	z-index: 2;
+}
+.social ul{
+	float:left;
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.social ul li{
+	float:left;
+	padding-right:25px;
+	height:40px;
+	width:50px;
+}
+.facebook{
+	background:url('../images/facebook.png') no-repeat center center;
+}
+.contato{
+	background:url('../images/contato.png') no-repeat center center;	
+}
+.blog{
+	background:url('../images/blog.png') no-repeat center center;		
+}
+
+/* Delicias */
+.deliciasWrapper{
+	width: 1110px;
+	height: 2000px;
+	margin-left: -40px;
+	background:url('../images/deliciasBG.png') center center no-repeat;
+	background-size:100% 100%;
+}
+.deliciasTitle{
+	width: 200px;
+	float: left;
+	height: 200px;
+	margin-left: 450px;
+	margin-top: 100px;
+	font-size: 54px;
+	font-family:'monotype';
+	color: #5B6262;
+}
+.cardapioTitle h2{
+	font-size: 36px;
+	font-family:'monotype';
+}
+.deliciasWrapper .deliciasContent{
+	float: left;
+	width: 800px;
+	margin-left: 150px;
+	height: 200px;
+}
+.contentCardapio{
+	padding-left:60px;
+	margin-top:80px;
+	width: 3000px;
+}
+.conteudoDelicias{
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+	height: 200px;
+}
+.deliciasWrapper .deliciasContent{
+	margin-bottom: 360px;
+	margin-top: -80px;
+}
+.cardapioTitle{
+	color: #5B6262;
+}
+.cardapioTitle h2{
+	position:absolute;
+}
+.contentCardapio h3{
+	color: #5B6262;
+}
+.foto01{
+	width:450px;
+	height:300px;
+	float:left;
+	background:url('../images/delicias/deliciasFoto01.jpg') center center no-repeat;
+	background-size: 100% 100%;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin-top:80px;
+}
+.foto02{
+	width:450px;
+	height:300px;
+	float:left;
+	background:url('../images/delicias/deliciasFoto02.jpg') center center no-repeat;
+	background-size: 100% 100%;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin-top:80px;
+}
+.foto03{
+	width:450px;
+	height:300px;
+	float:left;
+	background:url('../images/delicias/deliciasFoto03.jpg') center center no-repeat;
+	background-size: 100% 100%;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin-top:80px;
+}
+
+/* Responsivo */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+/* Styles */	
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
